@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*
+{
+    font-family: poppins;
+    margin: 0;
+    color: #0A0A0A;
+}
+@font-face {
+    font-family: 'gramatika'; 
+    src: url('font/Gramatika/Gramatika-Bold.ttf') format('tiff');
+}
+@font-face {
+    font-family: 'skolar'; 
+    src: url('font/SkolarCyrillic.ttf') format('tiff');
+}
+.nav-link {
+    font-family: poppins;
+    position: relative;
+    padding-bottom: 2px;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F40031;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F40031; 
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    background-color: #F40031; 
+}
+
+.custom-text-color {
+    color: #F40031;
+    font-weight: bold;
+}
+.director {
+    color: #F40031;
+}
+.download{
+    color: #ffffff;  
+    background-color: #F40031;
+    /* height: 192px; */
+}
+.download-btn{
+    align-self: center;
+    text-align: -webkit-center;
+}
+.buttons {
+    background-color: #F40031;
+    color: #ffffff;
+}
+.text-color-y {
+    color: #FFCD00;
+    /* font-weight: bold; */
+}
+.text-color-y-34 {
+    font-size: 34px;
+    color: #FFCD00;
+}
+.text-color-w {
+    color: #ffffff;
+    /* font-weight: bold; */
+}
+.weight{
+    font-family: skolar;
+    font-size: 98px;
+     font-weight: bold;
+     text-align: end;
+}
+
+.weight2{
+    font-family: gramatika;
+    font-size: 48px;
+     font-weight: bold;
+     /* margin-top: 60px; */
+}
+.leaders{
+    font-family: gramatika;
+    font-size: 30px;
+     font-weight: bold;
+     
+}
+.custom-h{
+    height: 936px;
+    width: 100%;
+}
+.display{
+    display: flex;
+}
+.animated-line-container {
+    position: relative;
+    display: inline-block;
+    /* display: inline-flex; */
+}
+.col-2{
+    width: 13%;
+    height: 13%;
+}
+.gap{
+    gap: 20px;
+    .gap:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+.animated-line-text {
+    display: inline-block;
+    position: relative;
+    
+}
+.animated-line-texts {
+    /* display: inline-block; */
+    position: relative;
+    text-align: -webkit-center;
+    
+}
+.animated-line {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 50%; /* Adjust the width of the line as needed */
+    height: 3px;
+    background-color: #F40031; /* Adjust the color of the line as needed */
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.6s ease;
+}
+.animated-line2 {
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    width: 40%; /* Adjust the width of the line as needed */
+    height: 3px;
+    background-color: #F40031; /* Adjust the color of the line as needed */
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.6s ease;
+}
+
+
+.animated-line-container:hover .animated-line {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+.animated-line-container:hover .animated-line2 {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+.row2{
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .0);
+    margin-top: var(--bs-gutter-y);
+}
+.Roadmap{
+    margin-top: 124px;
+}
+
+
+@media (max-width: 767px) {
+    .contactImg {  
+        height: 640px;
+    }
+    .download-btn{
+        align-self: start;
+        text-align: justify;
+    }
+}
+@media (max-width: 1000px) {
+    .hide-nav{
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .contactImg {  
+        height: 700px;
+    }
+    
+}
